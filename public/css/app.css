@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "Ayres";
+    src: url(../fonts/Ayres.ttf) format("truetype");
+}
+
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/*Nav font*/
+.ayres-font{
+	font-family: "Ayres";
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+.main .home-page {
+  margin-top: 0;
+  position: relative;
+}
+
+.main .home-page span, .main .home-page img{
+	position: absolute;
+}
+.main .home-page span{
+	font-size: 7em;
+	color: #f5f5f5;
+	margin: auto;
+}
+#background{
+	max-width: 100%;
+	min-width: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: -999;
+}
+
+
+
+/*image for links*/
+.img-link{
+	width: 200;
+	height: 200;
+	min-height: 200;
+	min-height: 200;
+	max-height: 200;
+	max-height: 200;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+  color: #000
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*photo on table*/
+.foto-60-60{
+	max-height: 60px;
+	max-width: 60px;
+}
+
+.foto-all{
+	max-height: 100%;
+	max-width:  100%;
+}
+
+.product-catalogo:hover{
+	background-color: #eceff1;
+	cursor: pointer;
+}
